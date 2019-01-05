@@ -1,12 +1,14 @@
 import numpy as np
 
-#construct binary magic cards with n as input
+#construct binary magic cards with m as input
 
-#number of cards to construct as determined by the user
-n = int(input('How many binary magic cards do you want to construct?'))
+#the end-point of the range
+m = int(input('What is the end-point (the largest number) of your range?'))
 
-#the maxinum number of value that can be attained with the given n
-m = 2**n-1
+m_bi = np.binary_repr(m)
+
+#number of cards to construct
+n = len(str(m_bi))
 
 #the result matrix, initialized with zeros
 res = np.zeros((n,1), dtype=int)
@@ -35,7 +37,7 @@ counter = n+1
 for x in res:
     x = np.unique(x)
     x = x[1:]
-
+    
     #the final output showing the numbers to be printed on each card
     #the length of each card is also provided as additional info
     counter-=1
