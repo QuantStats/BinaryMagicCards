@@ -8,4 +8,4 @@ Then, the magician tell the person to select all (or none of) the cards that con
 The problem to solve is as follows:
 How to construct the cards and fill them with those numbers in the given range such that they cover every possible number that can be chosen by the asked person in the pre-defined range?
 
-The program 'BinaryMagicInv.py' solves the problem above. The second program 'BinaryMagic.py' is a slight modficiation to the first program. It asks the user how many binary magic cards the user wants to construct. See also 'binary_magic_card.pdf' on how to solve the problem using the binary number system.
+The script `BinaryMagicInv.py` solves the problem above. The second script `BinaryMagic.py` is a slight modficiation to the first program. It asks the user how many binary magic cards the user wants to construct. See also `binary_magic_card.pdf` on how to solve the problem using the binary number system.
